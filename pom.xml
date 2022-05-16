@@ -121,7 +121,7 @@
                 <outputDirectory>${basedir}/target</outputDirectory>
                 <resources>
                     <resource>
-                        <directory>source-files</directory>
+                        <directory>${basedir}</directory>
                         <includes>
                             <include>shiftleft.yml</include>
                         </includes>
