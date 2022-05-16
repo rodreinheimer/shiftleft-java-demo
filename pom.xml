@@ -106,26 +106,32 @@
                     </execution>
                 </executions>
             </plugin>
-<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>exec-maven-plugin</artifactId>
+		
+		<plugin>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>3.0.2</version>
     <executions>
         <execution>
-            <phase>package</phase>
-            <goals><goal>exec</goal></goals>
-            <version>3.0.0</version>
+            <id>copy-resource-one</id>
+            <phase>generate-sources</phase>
+            <goals>
+                <goal>copy-resources</goal>
+            </goals>
             <configuration>
-                <executable>jar</executable>
-                <arguments>
-                    <argument>uf</argument>
-                    <argument>${project.build.directory}/hello-shiftleft-0.0.1.jar</argument>
-                    <argument>-C</argument>
-                    <argument>${project.build.directory}/shiftleft.yml</argument>
-                </arguments>
+                <outputDirectory>${basedir}/target</outputDirectory>
+                <resources>
+                    <resource>
+                        <directory>source-files</directory>
+                        <includes>
+                            <include>shiftleft.yml</include>
+                        </includes>
+                    </resource>
+                </resources>
             </configuration>
         </execution>
     </executions>
 </plugin>
+		
         </plugins>
     </build>
 </project>
