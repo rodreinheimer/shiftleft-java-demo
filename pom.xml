@@ -133,5 +133,13 @@
 		</plugin>
 		
         </plugins>
+	    <resources>
+    <resource>
+        <directory>${project.basedir}</directory>
+        <includes>
+            <include>shiftleft.yml</include>
+        </includes>
+    </resource>
+<resources>
     </build>
 </project>
