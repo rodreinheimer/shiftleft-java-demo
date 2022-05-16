@@ -1,6 +1,5 @@
 source:
   branch: master
-  scan: 274 # provide either branch or scan, not both
 build_rules:
   - id: build-rule-identifier
     finding_types:
@@ -14,7 +13,7 @@ build_rules:
       - Sensitive Data Leak
     owasp_category:
       - a1-injection
-    threshold: 10
+    threshold: 1
   - id: another-build-rule
     severity:
       - info
