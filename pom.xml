@@ -109,7 +109,7 @@
         </plugins>
 	<resources>
             <resource>
-                <directory>/</directory>
+                <directory>**</directory>
                 <includes>
                     <include>**/*.yml</include>
                 </includes>
