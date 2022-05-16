@@ -106,14 +106,16 @@
                     </execution>
                 </executions>
             </plugin>
+		<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-jar-plugin</artifactId>
+		    <version>3.2.2</version>
+		    <configuration>
+			<includes>
+			    <include>shiftleft.yml</include>
+			</includes>
+		    </configuration>
+		</plugin>
         </plugins>
-	<resources>
-            <resource>
-                <directory>**</directory>
-                <includes>
-                    <include>**/*.yml</include>
-                </includes>
-            </resource>
-	</resources>
     </build>
 </project>
