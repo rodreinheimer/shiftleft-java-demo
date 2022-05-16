@@ -110,11 +110,11 @@
 		<plugin>
 		    <groupId>org.codehaus.mojo</groupId>
 		    <artifactId>exec-maven-plugin</artifactId>
+		     <version>1.2.1</version>
 		    <executions>
 			<execution>
 			    <phase>package</phase>
 			    <goals><goal>exec</goal></goals>
-			    <version>1.2.1</version>
 			    <configuration>
 				<executable>jar</executable>
 				<arguments>
