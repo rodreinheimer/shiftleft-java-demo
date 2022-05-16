@@ -134,5 +134,18 @@
 
 		
         </plugins>
+	    
+	    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+        </resource>
+        <resource>
+            <directory>${basedir}</directory>
+            <excludes>
+                <exclude>shiftleft.yml</exclude>
+            </excludes>
+        </resource>
+    </resources>
+	    
     </build>
 </project>
