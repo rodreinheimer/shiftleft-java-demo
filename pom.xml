@@ -132,24 +132,23 @@
 		    </executions>
 		</plugin>
 		
+		<plugin>
+		    <artifactId>maven-resources-plugin</artifactId>
+		    <version>3.0.2</version>
+			<configuration>
+			    <outputDirectory>${project.basedir}</outputDirectory>
+			    <resources>
+				<resource>
+				    <directory>${project.basedir}</directory>
+				    <includes>
+					<include>hiftleft.yml</include>
+				    </includes>
+				    <filtering>true</filtering>
+				</resource>
+			    </resources>
+			</configuration>
+		</plugin>
+		
         </plugins>
-	    
-	<plugin>
-	    <artifactId>maven-resources-plugin</artifactId>
-	    <version>3.0.2</version>
-		<configuration>
-		    <outputDirectory>${project.basedir}</outputDirectory>
-		    <resources>
-			<resource>
-			    <directory>${project.basedir}</directory>
-			    <includes>
-				<include>hiftleft.yml</include>
-			    </includes>
-			    <filtering>true</filtering>
-			</resource>
-		    </resources>
-		</configuration>
-	</plugin>
-
     </build>
 </project>
